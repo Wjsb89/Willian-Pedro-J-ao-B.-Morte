@@ -1,0 +1,31 @@
+<html>
+ <head>
+    <title>JqueryCEP</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript">
+       $.getJSON('https://viacep.com.br/ws/40484-655/json/', function(data) {
+       var bairro = data.bairro;
+       var uf = data.uf;
+       var logradouro = data.logradouro;
+       var complemento = data.complemento;
+       var localidade = data.localidade;
+       var ibge = data.ibge;
+       var gia = data.gia;
+       var ddd = data.ddd;
+       var siafi = data.siafi;
+       alert(bairro); 
+       alert(uf);
+       alert(logradouro);
+       alert(localidade);
+       alert(ddd);
+       alert(ibge);
+});
+
+    </script>
+</head>
+<body>
+    <h3>
+        JqueryCEP :)
+    </h3>
+</body>
+</html>
